@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+html, body {
+    margin: 0;
+}
+header {
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 120px;
+    position: absolute;
+    top:5px;
+    margin-left: 2%;
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+li {
+    float: left;
+    padding: 20 10 20 10;
+}
+li:hover {
+    background-color: #ffeef1;
+}
+#imagem_fundo {
+    background: url("fundoo.jpg");
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#titulo {
+    color: black;
+    padding-top: 20%;
+    font-size: 70px;
+    margin-right: 20%;
+    margin-left: 20%;
+    list-style: 0.5%;
+    font-family: 'Alike', serif;
+}
+#subtitulo{
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid black;
+}
+#acao {
+    color: red;
+    border: 1px red solid;
+    padding: 10px 20px 10px 20px;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.destaque {
+    background-color: #ffeef1;
+    padding: 30px 30px 30px 30px;
+    text-shadow: #ffeef1;
+}
+.coluna {
+    float: left;
+    padding:0 5%;
+    position: relative;
+}
+.dois {
+    width: 40%;
+}
+.tres {
+    width: 22%;
+}
+.imgdados{
+    width: 70%;
+    height: 10%;
+}
+.centralizado{
+    text-align: center;
+}
+.justificado {
+    text-align: justify;
+}
+footer {
+    background-color: #8a1414;
+    float: left;
+    width: 100%;
+    height: 30%;
+    color: white;
+}
+@media all and (max-width:768px) {
+    #menu{
+        visibility: hidden;
+    }
+    .coluna, .dois, .tres {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float:none;
+    }
+    #logodiv {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+    #logo{
+        margin-left: 0px;
+        transform: translateX(-50%);
+    }
+}
